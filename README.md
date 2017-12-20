@@ -1,27 +1,16 @@
-Welcome to the Glitch BETA
+Image Search Abstraction Project
 =========================
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
+FCC Back-end project
 
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
+Custom google search API
 
-Find out more [about Glitch](https://glitch.com/about).
+Project takes 2 parameters at "/" - Query and Offset and returns JSON format info containing image URL, Title and page URL.
 
+Offset must be a number and is parsed as second argument in this format:
 
-Your Project
-------------
+/?search=<search>&offset=<number-of-pages>
+  
+Returns 10 results a page.
 
-On the front-end,
-- edit `public/client.js`, `public/style.css` and `views/index.html`
-- drag in `assets`, like images or music, to add them to your project
-
-On the back-end,
-- your app starts at `server.js`
-- add frameworks and packages in `package.json`
-- safely store app secrets in `.env` (nobody can see this but you and people you invite)
-
-
-Made by [Fog Creek](https://fogcreek.com/)
--------------------
-
-\ ゜o゜)ノ
+Uses npm google-search library to build and parse custom search.
